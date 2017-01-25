@@ -2,7 +2,7 @@
 
 
 <?php
-$content = file_get_contents("https://dou.ua/lenta/news/");
+$content = file_get_contents("https://dou.ua/lenta/");
 $regularexp = '/<article[\s\S]*?<h2[\s\S]*?>[\s\S]*?href="(.*)">\s+(.*)\s+<[\s\S]*?<\/h2>[\s\S]*?<p[\s\S]*?>\s+([\s\S]*?)</';
 preg_match_all($regularexp, $content, $match);
 
